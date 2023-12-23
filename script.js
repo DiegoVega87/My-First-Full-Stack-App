@@ -12,7 +12,7 @@ btn.addEventListener("click", function () {
     btn.textContent = "Share a Fact";
   }
 });
-
+/*
 let votesInteresting = 23;
 let votesMindBlowing = 5;
 const text = "Lisbon is the capital of Portugal";
@@ -39,3 +39,4 @@ const age1 = calcFactAge(2015);
 console.log(age1);
 console.log(calcFactAge(2020));
 console.log(calcFactAge(1990));
+*/
