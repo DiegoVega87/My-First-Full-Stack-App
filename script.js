@@ -102,3 +102,20 @@ console.log(createdIn);
 // ... spread operator, unpacks the array
 const newFact = [...fact, "society"];
 console.log(newFact);
+
+const factObject = {
+  text: "Lisbon is the capital of Portugal",
+  category: "society",
+  createdIn: 2015,
+  isCorrect: true,
+  createSummary: function () {
+    return `The fact "${this.text}" is from the ${this.category.toUpperCase()}`;
+  },
+};
+
+console.log(factObject.text);
+console.log(factObject["category"]);
+
+const { category, isCorrect } = factObject;
+console.log(category);
+console.log(factObject.createSummary());
