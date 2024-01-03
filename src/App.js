@@ -58,7 +58,7 @@ function App() {
       setFacts(facts);
     }
     getFacts();
-  }, []);
+  }, []); // <-- empty dependency array to run only once
 
   return (
     <>
