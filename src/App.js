@@ -114,7 +114,7 @@ function isValidHttpUrl(string) {
 
 function NewFactForm({ setFacts, setShowForm }) {
   const [text, setText] = useState("");
-  const [source, setSource] = useState("www.example.com");
+  const [source, setSource] = useState("http://example.com");
   const [category, setCategory] = useState("");
   const textLength = text.length;
   function handleSubmit(e) {
@@ -136,7 +136,7 @@ function NewFactForm({ setFacts, setShowForm }) {
         createdIn: new Date().getFullYear(),
       };
       // 4. Add the new fact to the UI: add the fact to state
-      setFacts((facts) => [newFact, ...facts]);
+      setFacts((facts) => [newFact, ...facts]); // add the new fact to the beginning of the array
       // 5. Reset the input fields
       setText("");
       setSource("");
