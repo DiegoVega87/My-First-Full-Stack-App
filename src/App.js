@@ -114,7 +114,7 @@ function isValidHttpUrl(string) {
 
 function NewFactForm({ setFacts, setShowForm }) {
   const [text, setText] = useState("");
-  const [source, setSource] = useState("http://example.com");
+  const [source, setSource] = useState("www.example.com");
   const [category, setCategory] = useState("");
   const textLength = text.length;
   function handleSubmit(e) {
@@ -143,6 +143,8 @@ function NewFactForm({ setFacts, setShowForm }) {
       setCategory("");
       // 6. Close the form
       setShowForm(false);
+    } else {
+      alert("Please fill in all fields correctly");
     }
   }
 
