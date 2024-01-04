@@ -73,7 +73,7 @@ function App() {
       }
       getFacts();
     },
-    [currentCategory] // <-- dependency array to run only when category changes
+    [currentCategory] // <-- dependency array to run only when category changes // <-- dependency array to run only when category changes
   ); // <-- dependency array to run only once
 
   return (
