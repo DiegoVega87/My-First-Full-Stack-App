@@ -174,8 +174,7 @@ function NewFactForm({ setFacts, setShowForm }) {
       setIsUploading(false);
 
       // 4. Add the new fact to the UI: add the fact to state
-      if (!error) setFacts((facts) => [newFact[0], ...facts]); // add the new fact to the beginning of the array
-
+      if (!error) setFacts((facts) => [newFact[0], ...facts]); // add the new fact to the beginning of the arrayggit
       // 5. Reset the input fields
       setText("");
       setSource("");
