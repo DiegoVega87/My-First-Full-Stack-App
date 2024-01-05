@@ -294,10 +294,17 @@ function Fact({ fact, setFacts }) {
 
   return (
     <li className="fact">
-      <p>{fact.text}</p>
-      <a className="source" href={fact.source} target="_blank" rel="noreferrer">
-        (Source)
-      </a>
+      <p>
+        {fact.text}
+        <a
+          className="source"
+          href={fact.source}
+          target="_blank"
+          rel="noreferrer"
+        >
+          (Source)
+        </a>
+      </p>
       <span
         className="tag"
         style={{
